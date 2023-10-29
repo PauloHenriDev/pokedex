@@ -1,0 +1,71 @@
+body {
+    background-image: var(--paulo-background-body);
+    font-family: var(--paulo-font-family);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 15px;
+    color: var(--paulo-color-titulo);
+}
+
+main {
+    display: flex;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--paulo-background-descricao);
+    width: 300px;
+    height: 600px;
+    border: 3px solid black;
+    margin: 80px 0 0 80px;
+}
+
+.rpgs {
+    display: flex;
+    background-color: var(--paulo-background-rpgs);
+    padding: 30px;
+    flex-wrap: wrap;
+    width: 700px;
+    gap: 30px;
+    overflow-y: auto;
+    height: 400px;
+    margin: 180px 0 0 265px;
+    border: 3px solid black;
+}
+
+.rpgs::-webkit-scrollbar {
+    width: 10px;
+}
+
+.rpgs::-webkit-scrollbar-thumb {
+    background: var(--paulo-color-scrollbar);
+}
+
+.rpgs .icon {
+    position: absolute;
+    right: 362px;
+    font-size: 35px;
+    bottom: 515px;
+    color: var(--paulo-color-openpopup);
+}
+
+.rpg {
+    height: 100%;
+    overflow-x: hidden;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+}
+
+.rpg a {
+    color: var(--paulo-color-text-rpg);
+}
+
+.rpg img {
+    width: 100%;
+    border: 2px solid black;
+}

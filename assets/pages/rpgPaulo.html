@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/RpgPaulo.css">
+    <link rel="stylesheet" href="/assets/css/popup.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>RPG do Paulo</title>
+</head>
+<body>
+    <header>
+        <h1>RPG do Paulo</h1>
+    </header>
+    <main>
+        <section class="descricao">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste dicta quidem sapiente dolor. Possimus sapiente, suscipit voluptate aperiam fugiat aspernatur molestias animi, eum iure optio minus aliquam qui repudiandae?</p>
+        </section>
+        <section class="rpgs">
+            <i class='bx bx-plus icon' id="openPopup" onclick="openPopup()"></i>
+            <div class="rpg">
+                <a href="sidebar.html">
+                    <img src="/assets/img/darkSouls2Background.avif" alt="">
+                    <p>Three Lords</p>
+                </a>
+            </div>
+            <div class="rpg">
+                <a href="threeLordsPaulo.html">
+                    <img src="/assets/img/darkSouls2Background.avif" alt="">
+                    <p>Cyberpunk</p>
+                </a>
+            </div>
+            <div class="rpg">
+                <a href="1threeLordsPaulo1.html">
+                    <img src="/assets/img/darkSouls2Background.avif" alt="">
+                    <p>Caçadores</p>
+                </a>
+            </div>
+            <div class="rpg">
+                <a href="/index.html">
+                    <img src="/assets/img/darkSouls2Background.avif" alt="">
+                    <p>Caçadores</p>
+                </a>
+            </div>
+        </section>
+        <div class="popup" id="popup">
+            <i class='bx bx-plus icon' id="closePopup"></i>
+            <h3>Nome</h3>
+            <input type="text">
+            <h3>Adicionar Imagem</h3>
+            <div class="add-image">
+                <img src="/assets/img/add-image.png" alt="">
+            </div>
+            <button>Salvar</button>
+        </div>
+    </main>
+    <script src="/assets/js/addRpg.js"></script>
+</body>
+</html>

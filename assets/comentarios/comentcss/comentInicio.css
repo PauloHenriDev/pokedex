@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden; /* Por algum motivo, sem isso, o conteudo passa o tamanho da tela, ainda não sei como resolver sem isso */
+}
+
+main {
+    display: flex;
+    height: 100vh;      /* Para que o main ocupe a altura total da tela */
+}
+
+.img_joao, .img_luis {
+    width: 40%;         /* Primeira e terceira divs com 40% */
+    height: 100%;
+}
+
+.img_paulo {
+    width: 20%;         /* Segunda div com 20% */
+    height: 100%;
+}
+
+main img {
+    width: 100%;        /* Para que as imagens se ajustem corretamente sem distorcer */
+    height: 100vh;
+}

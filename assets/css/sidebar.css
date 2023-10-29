@@ -1,0 +1,213 @@
+body {
+    height: 100vh;
+    background: var(--paulo-three-lords-background-body);
+    font-family: var(--paulo-font-family);
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: var(--paulo-three-lords-background-sidebar);
+    width: 250px;
+    height: 100%;
+    gap: 2.5%;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar .logo-rpg {
+    width: 250px;
+}
+
+.sidebar .nome-rpg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sidebar .toggle {
+    position: absolute;
+    top: 18%;
+    left: 95%;
+    font-size: 25px;
+    border-radius: 50%;
+    color: var(--paulo-three-lords-color-toggle);
+    background: var(--paulo-three-lords-background-toggle);
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 40px;
+}
+
+.sidebar-search {
+    display: flex;
+    align-items: center;
+    background: var(--paulo-three-lords-background-search);
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.sidebar-search .icon {
+    font-size: 20px;
+    color: var(--paulo-three-lords-color-search-icon);
+    background: var(--paulo-three-lords-background-search-icon);
+}
+
+.sidebar-search input {
+    height: 30px;
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: var(--paulo-three-lords-background-input-search);
+}
+
+.sidebar .menu-links,
+.sidebar .bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 23px;
+    list-style: none;
+    width: 100%;
+    width: 100%;
+}
+
+.sidebar .menu-links .menu-nav {
+    width: 100%;
+}
+
+.sidebar .menu-links .menu-nav a {
+    border-radius: 6px;
+    padding-left: 15px;
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    align-items: center;
+}
+
+.sidebar .menu-nav a:hover {
+    background: var(--paulo-three-lords-background-menu-hover);
+    color: var(--paulo-three-lords-color-text-menu-hover);
+}
+
+.bottom-content .bottom-login-logout {
+    padding-left: 15px;
+    border-radius: 6px;
+}
+
+.bottom-content .bottom-login-logout:hover {
+    background: var(--paulo-three-lords-background-menu-hover);
+    color: var(--paulo-three-lords-color-text-menu-hover);
+}
+
+.bottom-content .bottom-toggle-mode {
+    position: relative;
+    background-color: red;
+    border-radius: 6px;
+}
+
+.bottom-content .bottom-toggle-mode, 
+.bottom-content .bottom-toggle-mode .bottom-sun-moon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.bottom-content .bottom-toggle-mode .bottom-sun-moon {
+    padding-left: 15px;
+}
+
+.bottom-content .bottom-toggle-mode .bottom-sun-moon .sun {
+    display: none;
+}
+
+.bottom-toggle-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bottom-toggle-switch .switch {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+
+.sidebar.collapsed {
+    width: 100px;
+}
+
+.sidebar.collapsed .menu-links .menu-nav a,
+.sidebar.collapsed .sidebar-search {
+    justify-content: center; 
+}
+
+.sidebar.collapsed .menu-links .menu-nav a i.icon,
+.sidebar.collapsed .sidebar-search i.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar.collapsed .nome-rpg, 
+.sidebar.collapsed .sidebar-search input, 
+.sidebar.collapsed .bottom-content {
+    display: none; 
+}
+
+.sidebar.collapsed .bottom-toggle-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar.collapsed .bottom-toggle-mode .bottom-sun-moon .sun,
+.sidebar.collapsed .bottom-toggle-mode .bottom-sun-moon .moon {
+    display: none;
+}
+
+.sidebar.collapsed .menu-links .menu-nav a span {
+    display: none; 
+}
+
+.sidebar.collapsed .menu-links .menu-nav a i {
+    font-size: 30px;
+}
+
+.sidebar.collapsed .sidebar-search i {
+    font-size: 30px;
+}
+
+.sidebar.collapsed .menu-links .menu-nav a {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.sidebar.collapsed .logo-rpg {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.sidebar.collapsed .sidebar-menu {
+    padding: 5px;
+}

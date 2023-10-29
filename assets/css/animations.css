@@ -1,0 +1,31 @@
+.opacityPopup {
+    animation: opacityPopup 0.5s ease-in-out;
+}
+
+.blur {
+    animation: blur 0.5s ease-in-out;
+}
+
+@keyframes blur {
+  
+    0% {
+      filter: blur(0px);
+    }
+  
+    100% {
+      filter: blur(3px);
+    }
+  
+  }
+
+@keyframes opacityPopup {
+  
+    0% {
+      opacity: 0%;
+    }
+  
+    100% {
+      opacity: 100%;
+    }
+  
+  }

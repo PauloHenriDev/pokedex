@@ -1,0 +1,37 @@
+:root {
+                /* RPG do Paulo */
+
+                /* Escolha do Rpg */
+    --paulo-font-family: 'Playpen Sans', cursive;
+    --paulo-color-titulo: #FFF;
+    --paulo-background-body: url('/assets/img/Roxo.jpg');
+    --paulo-background-descricao: #C2D9FF;
+    --paulo-text-descricao: #000;
+    --paulo-background-rpgs: #7B44A3;
+    --paulo-color-text-rpg: #000;
+    --paulo-color-scrollbar: #FFF;
+    --paulo-color-openpopup: #000;
+    --paulo-background-popup: rgb(116, 116, 160);
+    --paulo-color-closepopup: #FFF;
+    --paulo-background-closepopup: red;
+    --paulo-text-popup: #000;
+
+                /* Three Lords */
+                /* Modo Claro */
+    --paulo-three-lords-background-sidebar: pink;
+    --paulo-three-lords-background-body: rgb(131, 115, 117);
+    --paulo-three-lords-color-toggle: white;
+    --paulo-three-lords-background-toggle: blue;
+    --paulo-three-lords-background-search: gainsboro;
+    --paulo-three-lords-color-search-icon: #000;
+    --paulo-three-lords-background-search-icon: gainsboro;
+    --paulo-three-lords-background-input-search: gainsboro;
+    --paulo-three-lords-color-text-menu-hover: white;
+    --paulo-three-lords-background-menu-hover: green;
+    /* --cor-de-fundo: #BAABDA; */
+    /* --cor-da-fonte: #000;  (isso aq é outra parada rgb(233, 231, 231) usei no background input search) */
+    /* --cor-descricao: #C2D9FF; */
+    /* --cor-quadrado: #7b44a3; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500&display=swap');
